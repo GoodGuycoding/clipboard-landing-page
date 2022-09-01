@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+  --primary1: hsl(171, 66%, 44%);
+  --primary2: hsl(233, 100%, 69%);
+  --dark: hsl(210, 10%, 33%);
+  --grayblue: hsl(201, 11%, 66%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+header{
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 0.1px solid transparent;
+}
+.container{
+  width: 90%;
+  margin: 120px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section .content h1{
+  text-align: center;
+
+}
+.content .logo{
+  font-size: 90px;
+  font-weight: 200;
+  color: var(--primary1);
+  text-align: center;
+}
+.content p{
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: var(--grayblue);
+  text-align: center;
+}
+
+.btn-primary{
+ border: 2px solid transparent;
+ border-radius: 50px;
+ background-color: var(--primary1);
+ color: white;
+ padding: 10px 20px;
+ box-shadow: 2px 2px 3px var(--primary1);
+ transition: 0.2s ease;
+}
+.btn-primary:hover{
+  border: 2px solid var(--primary1);
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn-secondary:hover{
+  border: 2px solid var(--primary2);
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn-secondary{
+ border: 2px solid transparent;
+ border-radius: 50px;
+ background-color: var(--primary2);
+ color: white;
+ padding: 10px 20px;
+ box-shadow: 2px 2px 3px var(--primary2);
+}
+.wrapper img{
+  width: 700px;
+  height: auto;
+  margin: 10px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.margin-up{
+  margin-bottom: 50px;
+}
+.margin-up p{
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: var(--grayblue);
+}
+.content h1{
+  text-align: center;
+}
+.content-2 img{
+  width: 600px;
+  margin-top: 20px;
+  height: auto;
+  /* border: 2px solid red; */
+}
+.tools-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.tools-row div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.div-2, .div-3{
+  padding-bottom: 10px;
+}
+.tools-row img{
+  margin-bottom: 30px;
+
+} 
+.tools-row div p{
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 14px;
+  color: var(--grayblue);
+  text-align: center;
+}
+.icons-row{
+  display: flex;
+  align-items: center;
+}
+.icons-row div{
+  padding: 10px;
+  margin: 0 40px;
+}
+.buttons{
+  margin-top: 10px;
+}
+.wrap{
+  margin-top: 40px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap div{
+  margin: 0 50px;
+}
+.wrap ul {
+  list-style: none;
+}
+
+.wrap div:nth-of-type(4){
+  padding-bottom: 20px;
+}
+.wrap a{
+  text-decoration: none;
+}
+.wrap .logo{
+  font-size: 50px;
+  font-weight: 200;
+  color: var(--primary1);
+}
+.wrap .social-icons{
+  margin: 0;
+  margin-left: 250px;
+}
+.social-icons img{
+  margin-right: 10px;
+}
+
+@media (max-width: 600px){
+  .icons-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons-row div{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+ .container .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ .container .buttons button{
+    margin-bottom: 20px;
+  }
+  .tools-row{
+    flex-direction: column;
+  }
+  .content-2 img{
+    width: 70%;
+    height: auto;
+  }
+
+  .content-2{
+    display: contents;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+  .wrapper div{
+    display: contents;
+  }
+  .wrapper  div img{
+    width: 70%;
+    margin: 30px 0;
+  }
+  footer .wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .wrap .social-icons{
+   margin: 0;
+   padding: 0;
+   margin-left: 0;
+  }
+  footer .wrap div{
+  text-align: center;
+  }
+  footer .wrap div li{
+  padding: 10px;
+  }
+  footer .wrap img{
+  padding: 10px;
+  }
+  header{
+    background-image: url(./images/bg-header-mobile.png);
+  }
+ .container{
+  width: 90%;
+ }
+}
+
